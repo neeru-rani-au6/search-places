@@ -1,13 +1,17 @@
-import "./App.css"
-function App() {
+import { useState } from "react";
+import "./App.css";
+import Search from "./components/search";
+import Table from "./components/table";
 
-  // get all env variable
-  console.log(import.meta.env)
+function App() {
+  const [searchText, setSearchText] = useState('');
+
   return (
-    <h1>
-     Hello World
-    </h1>
+    <div className="layout-container">
+      <Search searchText={searchText} handleSearchTextChange={(text) => setSearchText(text)} />
+      < Table searchText={searchText} />
+    </div>
   )
 }
 
-export default App
+export default App;

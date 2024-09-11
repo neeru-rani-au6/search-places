@@ -1,0 +1,66 @@
+/* Basic table styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  border: 1px solid rgb(222, 226, 230);
+  text-align: left;
+}
+
+/* Header styling */
+.custom-table th {
+  font-weight: 700;
+  border-bottom: 2px solid rgb(222, 226, 230);
+}
+
+/* Pagination button styling */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid rgb(222, 226, 230);
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: rgb(233, 236, 239);
+  cursor: not-allowed;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+}
+
+.items-per-page label {
+  margin-right: 10px;
+}
+
+.items-per-page input {
+  width: 60px;
+  padding: 6px;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.table {
+  padding-top: 20px;
+}
