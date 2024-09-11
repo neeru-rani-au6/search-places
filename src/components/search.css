@@ -28,3 +28,17 @@
   background-color: rgb(233, 236, 239);
   cursor: not-allowed;
 }
+
+/* Keyboard shortcut */
+.keyboard-shortcut {
+  font-size: 12px;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+  height: 24px;
+  padding: 0 6px;
+  margin: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+}
